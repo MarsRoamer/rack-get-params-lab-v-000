@@ -18,6 +18,7 @@ class Application
       if @@cart.size > 0
         @@cart.each do |item|
           resp.write "#{item}"
+        end
       else
         resp.write "Cart is empty"
       end
