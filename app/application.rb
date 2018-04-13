@@ -22,7 +22,7 @@ class Application
       else
         resp.write "Cart is empty"
       end
-    end
+  
     elsif req.path.match(/add/)
       item = req.params["item"]
       if @@items.include?(item)
